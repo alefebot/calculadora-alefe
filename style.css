@@ -1,0 +1,177 @@
+/*/ Configurações Gerais /*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*/ Body /*/
+
+body::-webkit-scrollbar{
+    width: 13px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(10, 10, 10);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: white;    
+    border-radius: 20px;       
+    border: 4px solid black;  
+  }
+
+nav{
+    background-color: black;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.banner{
+    height: 100vh;
+    background: linear-gradient(rgb(199, 199, 199), rgba(107, 107, 107, 0.548));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*/ Footer /*/
+
+footer{
+    position: absolute;
+    background: #000000;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans" sans-serif;
+    padding-top: 40px;
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: white;
+}
+
+.socials a i{
+    font-size: 1.7rem;
+    transition: color .2s ease;
+}
+
+.socials a:hover{
+    color: black;
+    transition: 0.3s;
+}
+
+.footer-bottom{
+    background: #272727;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+/*/ DarkMode /*/
+body.dark {
+    background: #292c35;
+  }
+  
+  .checkbox {
+    opacity: 0;
+    position: fixed;
+  }
+  
+  .label {
+    background-color: #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+  
+  }
+  
+  
+  .label .ball {
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .label .ball {
+    transform: translateX(24px);
+  }
+  
+  .fa-moon {
+    color: #f1c40f;
+  }
+  
+  .fa-sun {
+    color: #f39c12;
+  }
